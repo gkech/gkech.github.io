@@ -1,0 +1,46 @@
+baseURL = "https://gkech.github.io/"
+title = "gkech.org"
+theme = "etch"
+
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+description = "Notes on what intrests me and I am currently working on..."
+copyright = "Copyright © 2022 George Kechagias"
+dark = "auto"
+highlight = true
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 20
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "posts"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "publications"
+name = "publications"
+title = "publications"
+url = "/publications/"
+weight = 20
+
+[permalinks]
+posts = "/:title/"
+
+[markup.goldmark.renderer]
+# Allow HTML in Markdown
+unsafe = true
+
+[markup.tableOfContents]
+ordered = true
